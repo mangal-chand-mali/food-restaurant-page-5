@@ -1,0 +1,335 @@
+<html>
+    <head>
+        <title>Book a Table</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                background:hwb(300 92% 7%) 92% 7%;
+            }.booking-img{
+                width:100%;
+                position: relative;
+            }.booking-img div i{
+                position: fixed;
+                display: inline-block;
+                top:90%;
+                left:95%;
+                font-size: 50px;
+                width: fit-content;
+                height: max-content;
+                color: #ff511c;
+            } .booking-img img{
+                width:100%;
+                height: 70%;
+                position: relative;
+            }.booking-img-content{
+                margin-top: -28%;
+                text-align: center;
+                margin-left: 350px;
+                color: white;
+                line-height: 30px;
+                position: absolute;
+            }.booking-img-content h3{
+                font-size: 15px;
+            }.booking-img-content label{
+                font-size: 15px;
+                color: red;
+            }.booking-img-content h1{
+                font-size: 45px;
+                margin-top: -10px;
+            }.booking-img-content h2{
+                font-size: 40px;
+                line-height: 40px;
+            }
+
+
+            .contact-us-main{
+                display: flex;
+                position: absolute;
+            
+            }
+            .contact-us{
+                height: 300px;
+                width: 250px;
+                border:2px solid #ff511c;
+                background: black;
+                color: #ff511c;
+                text-align: center;
+                margin-top: -140px;
+                margin-left: 150px;
+                opacity: 0.8;
+                float: left;
+            }.i{
+                font-size: 50px;
+                height: 50px;
+                width: 50px;
+                border: 1px solid red;
+                background: red;
+                border-radius: 50%;
+                padding: 20px;
+                text-align: center;
+                color: white;
+                margin: 30px 0px 20px 0px;
+
+            } .contact-us:hover{
+                cursor: pointer;
+                border: 2px solid red;
+                box-shadow: 5px 5px 5px red;
+            }
+
+            .online-book{
+                margin-top: 300px;
+                margin-left: 60px;
+            } .online-book h2{
+                font-family: Lucida Sans;
+                color: red;
+            } .online-book h1{
+               font-size: 35px;
+            }
+
+            .table{
+                margin-top:40px;
+                margin-left: 50px;
+                float: left;
+            }.table-th{
+                text-align: left;
+                padding-top: 30px;
+            }.table-td input{
+               padding: 10px;
+               width: 200px;
+               color: black;
+               background: silver;
+               border: none;
+               border-top: 2px solid red;
+            }.table-td input:hover{
+               border:1px solid red;
+               cursor: pointer;
+            }.masseage input{
+                width: 650px;
+                height: 120px;
+                padding-bottom:80px;
+                background: silver;
+                border: none;
+                border-top: 2px solid red;
+            }.masseage input:hover{
+               border:1px solid red;
+               cursor: pointer;
+            }.book-button-1{
+                width:230px;
+                height:60px;
+                color:white;
+                font-weight: bold;
+                background: #ff511c;
+                font-size:20px;
+                margin-left:0px;
+                margin-top:30px;
+                margin-bottom: 20px;
+                border:2px solid #ff511c;
+            }.book-button-1:hover{
+                width: 250px;
+                background:red;
+                border:2px solid red;
+                box-shadow: 5px 5px 5px black;
+                cursor: pointer;
+            }.Odear-img{
+                display: flex;  
+            }.Odear-img h1{
+               margin-top: -200px;
+               margin-left: 100px;
+            }.Odear-img img{
+               width: 500px;
+               margin-left: 20px;
+               border-radius: 25px;
+            }
+
+
+            .footer .footer-2{
+                margin-top: 100px;
+                height: 71%;
+                display: flex;
+                background:#272727;
+            }.about-1{
+                color:white;
+                line-height: 5px;
+                margin-left:60px;
+                margin-right: 310px;
+                float:left;	
+            }#hr-1{
+                border-top: 2px solid red;
+                width:67px;
+                margin-top:-55px;
+                margin-bottom:60px;
+                cursor: pointer;
+            }.about-1 h1{
+                padding-bottom:50px;
+                cursor: pointer;
+            }.about-1 h4{
+                cursor: pointer;
+            }.about-1 h3{
+                padding-bottom: 10px;
+                cursor: pointer;
+            }.about-center{
+                float:left;
+                display: block;
+            }.about-center-img{
+                width:400px;
+                height:200px;
+                margin-left: -130px;
+                padding-left:10px;
+            }.about-center h3{
+                color:white;
+                font-size:27px;
+                margin-left:-110px;
+                margin-top:20px;	
+            }.about-center i{
+                color: #ff511c; 
+                text-align: center;
+                right: 100px;
+                padding-left: 10px;
+                font-size:50px;
+            }.about-center i:hover{
+                color: red;
+                cursor: pointer;
+            }.about-right{
+                display: inline-block;
+                color:white;
+                margin-left:240px;
+                line-height:30px;
+                text-decoration: none;
+            }.link{
+                color:white;
+                font-size: 12px;
+                margin-left: 70px;
+                text-align: right;
+            }.about-right a{
+                color:white;
+                font-size: 12px;
+                text-decoration: none;
+            }.link a:hover{
+                color:red;
+                text-decoration: underline;
+            }#hr-2{
+                border-top: 4px solid red;
+                width:65px;
+                margin-top:-20px;
+                margin-bottom:60px;
+            }
+
+
+            .bottom-hr{
+                margin-top:-50px;
+            }.bottom-content{
+            color: white;
+            margin: 0px;
+            text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="booking-img">
+            <img src=".\Photos\Book_Table.jpeg"/>
+            <div>
+                <a href="Project_Mangal_Mali.html"><i class="fa-solid fa-arrow-up-from-square"></i> <i class="fa-solid fa-house-user"></i></a>
+            </div> 
+        </div>
+        <div class="booking-img-content">
+            <h3>Home <label> /  Book a Table</label></h3>
+            <h1>Book a Table</h1>
+            <h2>Please give us a call, or email us<br> and we’ll get back to you.</h2>
+        </div>
+        <div id="contact-us-main">
+            <div class="contact-us">
+                <i class="fa-solid fa-location-dot i"></i>
+                <h1>Our Location</h1>
+                <h3>577 vaishali Nagar ajmer,<br> ON K1R5P2</h3>
+            </div>
+            <div class="contact-us">
+                <i class="fa-solid fa-phone i"></i>
+                <h1>Phone</h1>
+                <h3>613-518-7434</h3>
+            </div>
+            <div class="contact-us">
+                <i class="fa-solid fa-envelope i"></i>
+                <h1>Email Us</h1>
+                <h3>info@thefoodcenter.com</h3>
+            </div>
+        </div>
+        <div class="online-book">
+            <h2>----   Book a table =>  613-518-7434</h2>
+            <h1>online reservation</h1>
+        </div>
+        <table class="table" cellspacing="15px">
+            <tr class="table-tr">
+                <th class="table-th">Your Name</th>
+                <th class="table-th">Your Email</th>
+                <th class="table-th">Your Phone</th>
+            </tr>
+            <tr>
+                <td class="table-td"><input type="text" name="text" placeholder="Your Name"/></td>
+                <td class="table-td"><input type="email" name="email" placeholder="Your Email"/></td>
+                <td class="table-td"><input type="text" name="number" placeholder="Your Number"/></td>
+            </tr>
+            <tr>
+                <th class="table-th">How many person ?</th>
+                <th class="table-th">Pick a Date</th>
+                <th class="table-th">Time</th>
+            </tr>
+            <tr>
+                <td class="table-td"><input type="number" name="number" placeholder="How many person ?"/></td>
+                <td class="table-td"><input type="date" name="date" placeholder="Pick a Date"/></td>
+                <td class="table-td"><input type="time" name="time" placeholder="Time"/></td>
+            </tr>
+            <tr>
+                <th colspan="3" class="table-th">Masseage</th>            
+            </tr>
+            <tr>
+                <td colspan="3" class="Masseage"><input type="text" name="text" placeholder="Masseage"/></td>   
+            </tr>
+            <tr>
+                <th colspan="3">
+                    <div class="book-button">
+                       <a href="Thank_you.html"><button class="book-button-1">Book Table</button></a> 
+                    </div>
+                </th>
+            </tr>
+        </table>
+        <div class="Odear-img">
+            <img src=".\Photos\img-6.avif"/>
+        </div>
+
+
+        
+        <div class="footer">
+            <div class="footer-2">
+                <div class="about-1">
+                    <h1>CONTACT US</h1>
+                    <hr align="left" id="hr-1"/>
+                    <h4><i class="fa-solid fa-phone-volume" style="color: #f50505;"></i> Call Us</h4>
+                    <h3><pre>  613-518-7434</pre></h3>
+                    <h4><i class="fa-sharp fa-regular fa-envelope" style="color: #ff1605;"></i> Email Us</h4>
+                    <h3><pre>  info@ottawakabab.com</pre></h3>
+                    <h4><i class="fa-solid fa-location-dot" style="color: #f71b02;"></i> Our Location</h4>
+                    <h3><pre>  577 Gladstone Ave Ottawa,</pre><pre>  ON K1R5P2</pre></h3>
+                </div>
+                <div class="about-center">
+                    <img class="about-center-img" src=".\Photos\bottom-logo.png"/>
+                    <h3>Whisper to us about your feelings,<br> and we will prepare what you need<br><font align="center" style="margin-left:42%;">now.</font></h3>
+                    <i class="fa-brands fa-square-facebook " ></i>  <i class="fa-brands fa-square-instagram"></i><i class="fa-brands fa-square-whatsapp"></i>
+                </div>
+                <div class="about-right">
+                    <h1>quick links</h1>
+                    <hr align="right" id="hr-2"/>
+                    <h3 class="link"><a href="Project_Mangal_Mali.html"><h1>Home</h1></a></h3>
+                    <h3 class="link"><a href="Project_Mangal_Mali.html"><h1>Menu</h1></a></h3>
+                    <h3 class="link"><a href="Events_Mangal_Mali.html"><h1>Events</h1></a></h3>
+                    <h3 class="link"><a href="Service_Mangal_Mali.html"><h1>Service</h1></a></h3>
+                    <h3 class="link"><a href="Contect_mangal_mali.html"><h1>Contact</h1></a></h3>
+                </div>
+            </div>
+           
+        </div>
+        <hr class="bottom-hr">
+        <h4 class="bottom-content"> 2017 All Rights Reserved by Scanfcode.<br> &copy  2022 Copyright :<b style="color: red;"> MANGAL CHAND MALI</b> </h4>
+    </body>
+</html>
